@@ -25,7 +25,7 @@ class InteliformsQuiz extends HTMLElement {
 
         /* QUESTION BLOCKS */
         .qa-block {
-          background: rgba(11, 31, 75, 0.04);
+          background: rgba(255,255,255,0.08);
           border-radius: 14px;
           padding: 1.25rem 1.5rem;
           margin-bottom: 0.75rem;
@@ -37,7 +37,7 @@ class InteliformsQuiz extends HTMLElement {
           font-weight: 700;
           letter-spacing: 0.09em;
           text-transform: uppercase;
-          color: #2E6FE8;
+          color: #4EAFF5;
           margin-bottom: 0.35rem;
         }
 
@@ -45,7 +45,7 @@ class InteliformsQuiz extends HTMLElement {
           font-family: 'Poppins', sans-serif;
           font-size: 0.975rem;
           font-weight: 700;
-          color: #0B1F4B;
+          color: #ffffff;
           margin-bottom: 0.85rem;
           line-height: 1.35;
         }
@@ -59,25 +59,25 @@ class InteliformsQuiz extends HTMLElement {
         .qa-opt {
           padding: 0.45rem 1.1rem;
           border-radius: 100px;
-          border: 1.5px solid rgba(11,31,75,0.15);
+          border: 1.5px solid rgba(255,255,255,0.2);
           font-family: 'Avenir Next', 'Avenir', sans-serif;
           font-size: 0.875rem;
-          color: #64748B;
+          color: rgba(255,255,255,0.7);
           cursor: pointer;
           transition: all 0.15s;
-          background: rgba(255,255,255,0.7);
+          background: rgba(255,255,255,0.07);
         }
 
         .qa-opt:hover {
-          border-color: #2E6FE8;
-          color: #2E6FE8;
-          background: rgba(46,111,232,0.05);
+          border-color: #4EAFF5;
+          color: #4EAFF5;
+          background: rgba(78,175,245,0.1);
         }
 
         .qa-opt.sel {
-          background: #2E6FE8;
-          border-color: #2E6FE8;
-          color: #fff;
+          background: #4EAFF5;
+          border-color: #4EAFF5;
+          color: #0B1F4B;
           font-weight: 600;
         }
 
@@ -107,7 +107,7 @@ class InteliformsQuiz extends HTMLElement {
           font-weight: 700;
           letter-spacing: 0.09em;
           text-transform: uppercase;
-          color: #2E6FE8;
+          color: #4EAFF5;
           margin-bottom: 0.4rem;
         }
 
@@ -115,7 +115,7 @@ class InteliformsQuiz extends HTMLElement {
           font-family: 'Poppins', sans-serif;
           font-size: 1.75rem;
           font-weight: 700;
-          color: #0B1F4B;
+          color: #ffffff;
           line-height: 1.15;
           margin-bottom: 0.3rem;
         }
@@ -123,7 +123,7 @@ class InteliformsQuiz extends HTMLElement {
         .r-tag {
           font-family: 'Avenir Next', 'Avenir', sans-serif;
           font-size: 0.95rem;
-          color: #64748B;
+          color: rgba(255,255,255,0.6);
           margin-bottom: 1rem;
           line-height: 1.5;
         }
@@ -131,10 +131,10 @@ class InteliformsQuiz extends HTMLElement {
         .r-intro {
           font-family: 'Avenir Next', 'Avenir', sans-serif;
           font-size: 0.9rem;
-          color: #374151;
+          color: rgba(255,255,255,0.75);
           line-height: 1.7;
           margin-bottom: 1.25rem;
-          background: rgba(11,31,75,0.04);
+          background: rgba(255,255,255,0.08);
           border-radius: 12px;
           padding: 1rem 1.25rem;
         }
@@ -147,7 +147,7 @@ class InteliformsQuiz extends HTMLElement {
         }
 
         .metric {
-          background: rgba(11,31,75,0.04);
+          background: rgba(255,255,255,0.08);
           border-radius: 12px;
           padding: 0.9rem 1rem;
         }
@@ -155,7 +155,7 @@ class InteliformsQuiz extends HTMLElement {
         .m-label {
           font-family: 'Avenir Next', 'Avenir', sans-serif;
           font-size: 0.72rem;
-          color: #64748B;
+          color: rgba(255,255,255,0.45);
           margin-bottom: 4px;
           line-height: 1.4;
         }
@@ -171,7 +171,7 @@ class InteliformsQuiz extends HTMLElement {
         .m-unit {
           font-family: 'Avenir Next', 'Avenir', sans-serif;
           font-size: 0.7rem;
-          color: #94A3B8;
+          color: rgba(255,255,255,0.3);
           margin-top: 2px;
         }
 
@@ -185,7 +185,7 @@ class InteliformsQuiz extends HTMLElement {
         .r-pain {
           padding: 0.85rem 1rem;
           border-radius: 10px;
-          background: rgba(11,31,75,0.04);
+          background: rgba(255,255,255,0.08);
           border: 1px solid rgba(11,31,75,0.08);
         }
 
@@ -198,16 +198,16 @@ class InteliformsQuiz extends HTMLElement {
           font-family: 'Poppins', sans-serif;
           font-size: 0.875rem;
           font-weight: 700;
-          color: #0B1F4B;
+          color: rgba(255,255,255,0.9);
           margin-bottom: 3px;
         }
 
-        .r-pain.hot .rpt { color: #991B1B; }
+        .r-pain.hot .rpt { color: #F09595; }
 
         .rpb {
           font-family: 'Avenir Next', 'Avenir', sans-serif;
           font-size: 0.8rem;
-          color: #64748B;
+          color: rgba(255,255,255,0.55);
           line-height: 1.5;
         }
 
@@ -258,9 +258,9 @@ class InteliformsQuiz extends HTMLElement {
           width: 100%;
           padding: 0.75rem;
           background: transparent;
-          border: 1.5px solid rgba(11,31,75,0.15);
+          border: 1.5px solid rgba(255,255,255,0.15);
           border-radius: 100px;
-          color: #64748B;
+          color: rgba(255,255,255,0.4);
           font-family: 'Poppins', sans-serif;
           font-weight: 700;
           font-size: 0.875rem;
@@ -268,7 +268,7 @@ class InteliformsQuiz extends HTMLElement {
           transition: all 0.15s;
         }
 
-        .btn-restart:hover { border-color: #2E6FE8; color: #2E6FE8; }
+        .btn-restart:hover { border-color: rgba(255,255,255,0.35); color: rgba(255,255,255,0.7); }
 
         @media (max-width: 480px) {
           .qa-block { padding: 1rem 1.1rem; }
