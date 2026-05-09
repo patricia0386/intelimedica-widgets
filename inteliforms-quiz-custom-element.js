@@ -3,14 +3,20 @@ class InteliformsQuiz extends HTMLElement {
     this.attachShadow({ mode: 'open' });
     this.state = { rol: null, vol: { v: null, n: 0 }, rec: { v: null, m: 1 } };
     this.done  = { rol: false, vol: false, rec: false };
+    // Inject Poppins into document head so it loads for shadow DOM too
+    if (!document.getElementById('inteliforms-fonts')) {
+      const link = document.createElement('link');
+      link.id   = 'inteliforms-fonts';
+      link.rel  = 'stylesheet';
+      link.href = 'https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap';
+      document.head.appendChild(link);
+    }
     this.render();
   }
 
   render() {
     this.shadowRoot.innerHTML = `
       <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
-
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         :host {
